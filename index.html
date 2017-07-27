@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Songify</title>
+    <link rel="stylesheet" text="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" text="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav id="navbar">
+            <h1 id="songify-app-heading">Songify</h1>
+            <i class="fa fa-search" id="song-search-icon"></i>
+            <input class="song-name-search-input" type="text" placeholder="Enter your song name">
+        </nav>
+    </header>
+    
+    <div class="log-in">
+        <div class="login-box">
+            <h1>Log in</h1>
+            <input class="login-username-input" type="text" placeholder="  Enter your username">
+            <input class="login-password-input" type="text" placeholder="  Enter your password">
+            <p class="login-data-invalid">Dummy text</p>
+            <button id="login-button">Login</button>
+        </div>
+    </div>
+    
+    <div class="main-music-player">
+       <div class="playlists">
+            <div class="playlist-my-playlist">
+                <h1>My Playlist</h1>
+            </div>
+            <div class="playlist-all-songs">
+                <h1>All songs</h1>
+            </div>
+       </div>
+       
+       
+       <div class="song-list">
+           <table id="songs">
+                <thead>
+                    <tr id="table-head">
+                        <td>Title</td>
+                        <td>Artist</td>
+                        <td>Album</td>
+                        <td>Duration</td>
+                    </tr>
+                </thead>
+                <tbody style="">
+                    <tr id='song1'>
+                        <td class="song-name"></td>
+                        <td class="song-artist"></td>
+                        <td class="song-album"></td>
+                        <td class="song-duration"></td>
+                    </tr>
+                    <tr id='song2'>
+                        <td class="song-name"></td>
+                        <td class="song-artist"></td>
+                        <td class="song-album"></td>
+                        <td class="song-duration"></td>
+                    </tr>
+                    <tr id='song3'>
+                        <td class="song-name"></td>
+                        <td class="song-artist"></td>
+                        <td class="song-album"></td>
+                        <td class="song-duration"></td>
+                    </tr>
+                    <tr id='song4'>
+                        <td class="song-name"></td>
+                        <td class="song-artist"></td>
+                        <td class="song-album"></td>
+                        <td class="song-duration"></td>
+                    </tr>
+                </tbody>
+            </table>
+       </div>
+       
+       <div class="footor">
+            <div class="current-song-wrapper">
+                <img class="current-song-image">
+                <p class="current-song-name"></p>
+                <p class="current-song-album"></p>
+           </div>
+
+           <div class="controls">
+               <div class="icon-controls">
+                   <i class="fa fa-random" id="shuffle"></i>
+                   <i class="fa fa-backward" id="back-a-little-bit"></i>
+                   <i class="fa fa-play play-icon"></i>
+                   <i class="fa fa-forward" id="forward-a-little-bit"></i>
+                   <i class="fa fa-repeat" id="song-repeat"></i>
+               </div>
+               <div class="progressbar-with-time">
+                   <p class="current-time">0:00</p>
+                   <progress id="current-song-seekbar" max="100" value="0"></progress>
+                   <p class="current-duration">2:00</p>
+               </div>
+           </div>
+       </div>
+       <audio ></audio>
+    </div>
+    
+    <script src="assets/script/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Antonio-Regular';
+    src: url('/assets/fonts/Antonio-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Antonio-Bold';
+    src: url('/assets/fonts/Antonio-Bold.ttf');
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.hide-wali-class{
+    display: none;
+    visibility: hidden;
+}
+
+#navbar{
+    background-color: #3C3C3C;
+    margin-bottom: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+}
+
+#songify-app-heading{
+    display: inline;
+    color: #30B55C;
+    font-family: Antonio-Bold;
+    font-size: 50px;
+    margin: 70px;
+}
+
+#song-search-icon{
+    color: #30B55C;
+    font-size: 50px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.song-name-search-input{
+    text-align: center;
+    border: 4px solid #30B55C;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 300px;
+    background-color: #3C3C3C;
+    border-radius: 40px;
+    font-size: 25px;
+    color: #30B55C;
+}
+
+.log-in{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url('/assets/img/back-green-songify.jpg');
+    background-position:center;
+    background-size: cover;
+}
+
+.login-box{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    border-radius: 40px;
+    background: rgba(8,8,8,0.40);
+    width: 600px;
+    display: inline-block;
+    border: 4px solid #30B55C;
+}
+
+.log-in h1{
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:Antonio , sans-serif;
+    color: #30B55C;
+}
+
+.login-username-input , .login-password-input{
+    text-align: center;
+    border: 4px solid #30B55C;
+    margin-top: 15px;
+    background: rgba(8,8,8,0.30);
+    margin-right: 10px;
+    height: 50px;
+    width: 350px;
+    border-radius: 40px;
+    font-size: 25px;
+    color: #30B55C;
+}
+
+.login-data-invalid{
+    margin: 10px 0px 0px 0px;
+    color: red;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#login-button{
+    height: 60px;
+    width: 358px;
+    border-radius: 40px;
+    background-color: #30B55C;
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.main-music-player{
+    height: 100%;
+    background-color: #222222;
+}
+
+.playlists{
+    margin: 0px;
+    margin-top: 70px;
+    font-family: sans-serif;
+    background-color: #222222;
+    color: white;
+}
+
+.playlists .playlist-my-playlist , .playlist-all-songs{
+    display: inline-block;
+    width: 49.8%;
+    text-align: center;
+    border-bottom: 5px solid #222222;
+}
+
+.playlists .playlist-all-songs{
+    color: #30B55C;
+    border-bottom: 5px solid #30B55C;
+}
+#songs_filter , #songs_info{
+    display: none;
+}
+
+#songs{
+    margin: 0px;
+    color: white;
+    min-width: 100%;
+    font-family: sans-serif;
+    padding: 40px 50px 0px 53px;
+}
+
+#table-head{
+    font-size: 25px;
+}
+
+td{
+    background-color: #222222;
+}
+
+.footor{
+    width: 100%;
+    max-height: 15%;
+    background-color: #3C3C3C;
+    position: fixed;
+    bottom: 0;
+}
+.current-song-wrapper{
+    height: 15%;
+    display: inline-block;
+    width: 380px;
+    margin: 0px;
+}
+
+.current-song-wrapper .current-song-image{
+    height: 70px;
+    margin: 4px;
+    margin-right: 10px;
+    border: 5px solid #30B55C;
+    margin-left: 4px;
+    float: left;
+}
+
+.current-song-name , .current-song-album{
+    display: inline-grid;
+    font-size: 18px;
+    margin: 14px 10px 0px 0px;
+    font-family: sans-serif;
+    color: #30B55C;
+}
+
+.current-song-name{
+    font-weight: bold;
+}
+
+.current-song-album{
+    display: block;
+}
+
+.controls{
+    height: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.controls .icon-controls{
+    padding: 0px 100px;
+}
+
+.fa-random , .fa-backward , .play-icon , .fa-forward , .fa-repeat{
+    margin: 14px 30px 0px 30px;
+    font-size: 20px;
+    color: white;
+} 
+
+.progressbar-with-time{
+    margin: 0px;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.current-time , #current-song-seekbar , .current-duration{
+    display: inline;
+}
+
+.current-time , .current-duration{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding:  0px 30px;
+    color: white;
+}
+
+#current-song-seekbar{
+    width: 400px;
+    background: black;
+}
